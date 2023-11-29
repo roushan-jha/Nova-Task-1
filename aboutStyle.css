@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root {
+    --logo: 'Josefin Sans', sans-serif;
+    --title-font: 'Poppins', sans-serif;
+    --p-font: 'Roboto', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(210, 208, 208);
+}
+.nav-bar {
+    background-color: black;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2px;
+
+}
+.element {
+    font-family: var(--logo);
+    font-size: 2.5rem;
+}
+.nav {
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+}
+.quote {
+    padding: 30px;
+    cursor: pointer;
+}
+
+/* .quote p {
+    cursor: pointer;
+} */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.div-top {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 1rem;
+    background-image: url(moon_space_img.jpg);
+    background-color: rgb(150, 150, 236);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.div-bottom {
+    display: flex;
+    font-family: var(--p-font);
+    font-size: 1.2rem;
+    padding: 20px;
+}
+.div-left {
+    margin-right:5px;
+    padding: 10px;
+    text-align: left;
+}
+.div-right {
+    margin-left: 5px;
+    padding: 10px;
+    padding-top: 50px;
+    text-align: left;
+}
+.div-left h2 {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.div-left h2:hover {
+    font-size: 1.9rem;
+    transition: .4s;
+}
+
+.footer-section {
+    background-color: black;
+    height: 10vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    font-family: var(--title-font);
+    color: white;
+}
+
+.copyright a {
+    font-family: var(--logo);
+    font-size: 1.6rem;
+}
+
+@media (width <= 756px) {
+    .div-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .div-right {
+        padding-top: 5px;
+        margin: 0px;
+    }
+    .div-left {
+        padding-bottom: 5px;
+        margin-left: 0px;
+    }
+    
+}
